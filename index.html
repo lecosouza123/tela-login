@@ -7,21 +7,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/media-query.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
     <main>
         <section id="login">
             <div id="imagem">
-                      
+                      <!--aki vai imagens do css-->
 
             </div>
 
             <div id="formulario">
                 <h1>Login</h1>
                 <p>Seja-bem-vindo(a) novamente.Faça login para acessar a sua conta e poder fazer as configurações no seu ambiente. </p>
-                <form action="login.php" method="post">
+                <form action="login.php" method="post" autocomplete="on">
+                    <div class="campo">
+                        <span class="material-icons md-dark">manage_accounts</span>
+                        <input type="email" name="nome" id="nome" required minlength="10" maxlength="50" size="15" autocomplete="email" placeholder="Seu e-mail">
+                        <label for="nome">Login</label> 
+                    </div>
+
+                    <div class="campo">
+                        <span class="material-icons md-dark">vpn_key</span>
+                        <input type="password" name="isenha" id="isenha" minlength="8" maxlength="15" size="15" required autocomplete="current-password" placeholder="8 digitos">
+                        <label for="isenha">Senha</label>
+                    </div>
+
+                     
+                        <input type="submit" value="Enviar">
+                        <a href="#" class="botao">Esqueci a senha <span class="material-icons md-dark">mail</span></a> 
+                    
 
                 </form>
+                   
             </div>
             
         </section>
